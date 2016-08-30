@@ -2,6 +2,6 @@
 # tasks file for centos
   -
     name: "update packages to latest"
-    shell: "yum update -y"
+    yum: name=* state=lastest
     become: true
     become_method: sudo
